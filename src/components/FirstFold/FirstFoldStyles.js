@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import Grainy from "../../assets/images/home/bg-grain.png";
-import CursorBlack from "../../assets/images/home/cursorblack.svg";
+import CursorBlack from "../../assets/images/home/cursorBlack.svg";
 // import code2 from "../../assets/images/home/code2.png";
 // import code1 from "../../assets/images/home/code1.png";
 
