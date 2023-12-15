@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Grainy from "../../assets/images/home/bg-grain.png";
 import GrainyBlack from "../../assets/images/home/bg-grain-dark.png";
-import CursorBlack from "../../assets/images/home/cursorblack.svg";
+import CursorBlack from "../../assets/images/home/cursorBlack.svg";
 
 export const SkillsContainer = styled.div`
   margin: 2rem auto;
