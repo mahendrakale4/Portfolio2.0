@@ -1,0 +1,10 @@
+[build]
+  command = "gatsby build"
+  functions = ""
+  publish = "public"  # Set the publish directory to "public" for Gatsby sites
+
+[[plugins]]
+  package = "@netlify/plugin-gatsby"
+  # Rest of your plugin configuration...
+
+# Rest of your file...
