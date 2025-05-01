@@ -4,6 +4,7 @@ import { MenuToggle, StyledHamburgerList, StyledNavbar, StyledNavbarLinks } from
 import Button from "../Button/Button";
 import plus from "../../assets/images/alt/plus-sign.svg";
 import logo from "../../assets/images/home/logo.svg";
+import gmeet from "../../assets/images/home/gmeet.svg";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -48,7 +49,7 @@ function Navbar() {
   }, []);
 
   //add an event listener to the window object
-  
+
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", changeColor);
   }
@@ -86,6 +87,10 @@ function Navbar() {
           <StyledNavbarLinks>
             <Link to="/about">about</Link>
             <Link to="/projects">projects</Link>
+            {/* <Link to="https://cal.com/mahendrakale">Schedule Call</Link> */}
+            <a href="https://cal.com/mahendrakale" target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.9em" }}>
+              schedule Meet
+            </a>
             {/* <Link to="https://mahendrakale.netlify.app/experience" target="_blank" rel="noreferrer">experience</Link> */}
 
           </StyledNavbarLinks>
@@ -94,12 +99,13 @@ function Navbar() {
             <Button>resume</Button>
           </a>
         </>
-      )}
+      )
+      }
       <div
         className="nav-overlay"
         style={{
           top: toggleHamburger ? "0" : "-150%",
-          transitionDelay: toggleHamburger ? "0.5s" : "0s",
+          // transitionDelay: toggleHamburger ? "0.5s" : "0s",
         }}
       >
         <StyledHamburgerList>
@@ -129,6 +135,12 @@ function Navbar() {
             <div className="hamburger__link__wrapper" />
           </li>
           <li className="hamburger__link">
+            <a href="https://cal.com/mahendrakale" target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.9em" }}>
+              schedule Meet
+            </a>
+            <div className="hamburger__link__wrapper" />
+          </li>
+          <li className="hamburger__link">
             {/* <a href="/resume.pdf" target="_blank"> */}
             <a href="https://linktr.ee/mahendrakale" target="_blank" rel="noreferrer">
               Resume
@@ -137,7 +149,7 @@ function Navbar() {
           </li>
         </StyledHamburgerList>
       </div>
-    </StyledNavbar>
+    </StyledNavbar >
   );
 }
 
